@@ -10,6 +10,7 @@ export default function OrdersPage() {
 
     useEffect(() => {
         api.get('/orders').then((res) => setOrders(res.data));
+        console.log('Заказы загружены:', orders);
     }, []);
 
     return (
@@ -29,11 +30,11 @@ export default function OrdersPage() {
                     {orders.map((order) => (
                         <tr key={order.id} className="border-t">
                             <td>{order.id}</td>
-                            <td>{order.customerName}</td>
+                            <td>{order.customer}</td>
                             <td>
                                 <span className={`px-2 py-1 text-white rounded ${order.status === 'pending' ? 'bg-yellow-500' :
-                                        order.status === 'shipped' ? 'bg-green-500' :
-                                            'bg-red-500'
+                                    order.status === 'shipped' ? 'bg-green-500' :
+                                        'bg-red-500'
                                     }`}>
                                     {order.status}
                                 </span>
