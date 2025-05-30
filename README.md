@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Orderly - Система управления заказами
 
-## Getting Started
+## Описание проекта
+Orderly - это современное веб-приложение для управления заказами, построенное на Next.js 15 с использованием TypeScript. Проект представляет собой полноценную систему управления бизнес-процессами с акцентом на работу с заказами, клиентами и продуктами.
 
-First, run the development server:
+## Технологический стек
+- **Frontend**: Next.js 15, React 19, TypeScript
+- **Стилизация**: Tailwind CSS
+- **Аутентификация**: NextAuth.js
+- **Формы**: React Hook Form
+- **HTTP-клиент**: Axios
 
+## Реализованные функции
+1. **Аутентификация и авторизация**
+   - Система входа в приложение
+   - Защищенные маршруты
+
+2. **Управление заказами**
+   - Просмотр списка заказов
+   - Создание новых заказов
+   - Детальная информация о заказе
+
+3. **Управление клиентами**
+   - Список клиентов
+   - Информация о клиентах
+
+4. **Управление продуктами**
+   - Каталог продуктов
+   - Информация о продуктах
+
+5. **Настройки системы**
+   - Базовые настройки приложения
+
+6. **Отчеты**
+   - Базовые отчеты по системе
+
+## Что нужно реализовать
+
+### Приоритетные задачи
+1. **Расширение функционала заказов**
+   - Статусы заказов
+   - История изменений заказов
+   - Уведомления о статусе заказа
+
+2. **Улучшение работы с клиентами**
+   - История заказов клиента
+   - Система лояльности
+   - Интеграция с CRM
+
+3. **Расширение управления продуктами**
+   - Категории продуктов
+   - Остатки на складе
+   - Ценообразование
+
+4. **Улучшение отчетности**
+   - Расширенные аналитические отчеты
+   - Экспорт данных
+   - Графики и диаграммы
+
+### Дополнительные улучшения
+1. **Оптимизация производительности**
+   - Кэширование данных
+   - Оптимизация загрузки страниц
+
+2. **Улучшение UI/UX**
+   - Адаптивный дизайн
+   - Темная тема
+   - Анимации и переходы
+
+3. **Интеграции**
+   - API для внешних систем
+   - Интеграция с платежными системами
+   - Интеграция с системами доставки
+
+## Установка и запуск
+
+1. Клонируйте репозиторий:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [url-репозитория]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Установите зависимости:
+```bash
+npm install
+# или
+bun install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Запустите проект в режиме разработки:
+```bash
+npm run dev
+# или
+bun run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Откройте [http://localhost:3000](http://localhost:3000) в браузере
 
-## Learn More
+## Разработка
+- Используйте `npm run lint` для проверки кода
+- Следуйте TypeScript конфигурации в `tsconfig.json`
+- Придерживайтесь структуры проекта в директории `src/`
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Лицензия
+Проект является приватным и не подлежит распространению без разрешения.
